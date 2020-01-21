@@ -1,18 +1,18 @@
 <template>
   <Layout>
     <h1 class="tag-title text-center space-bottom">
-      # {{ $page.tag.title }}
+      # {{ $page.buildTag.title }}
     </h1>
 
     <div class="posts">
-      <PostCard v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
+      <PostCard v-for="edge in $page.buildTag.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
     </div>
   </Layout>
 </template>
 
 <page-query>
-query Tag ($id: ID!) {
-  tag (id: $id) {
+query BuildTag ($id: ID!) {
+  buildTag (id: $id) {
     title
     belongsTo {
       edges {

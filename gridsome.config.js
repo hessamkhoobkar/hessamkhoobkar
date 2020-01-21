@@ -12,7 +12,7 @@ module.exports = {
     Post: '/Blog-Posts/:title',
     Build: '/Build/:title',
     Tag: '/Blog-Posts/tag/:id',
-    BTag: '/Build/tag/:id'
+    BuildTag: '/Build/tag/:id'
   },
 
   plugins: [
@@ -36,7 +36,7 @@ module.exports = {
         path: 'content/builds/*.md',
         refs: {
           tags: {
-            typeName: 'BTag',
+            typeName: 'BuildTag',
             create: true
           }
         }
