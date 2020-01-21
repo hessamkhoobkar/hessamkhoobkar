@@ -1,0 +1,32 @@
+// Default
+html {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	background-color: #ffffff;
+	color: #071232;
+	transition: color .6s, background-color .6s;
+	margin:0;
+	padding:0;
+}
+
+img {
+	max-width: 100%;
+}
+
+// a:not(.button), a:not(.navItem) {
+// 	color: var(--link-color);
+//  	transition: opacity .2s;
+// 	&:hover {
+// 		opacity: .8;
+// 	}
+// }
+
