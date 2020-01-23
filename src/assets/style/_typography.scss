@@ -1,45 +1,38 @@
-html {font-size: 19px;} /*19px*/
-
 body {
-  background-color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-primary);
   font-weight: 400;
-  line-height: 1.65;
-  color: #071232;
+  line-height: 1.5;
 }
 
 p {margin-bottom: 1.333em;}
 
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
-  margin: 2.75rem 0 1.05rem;
-  font-family: 'Bitter', serif;
+  font-family: var(--font-secondary);
   font-weight: 600;
   line-height: 1.15;
+  margin: var(--spacing-2x-75) 0 var(--spacing-1x);
 }
 
 h1, .h1 {
   margin-top: 0;
-  font-size: 4.209em;
+  font-size: var(--text-4x);
 }
 
-h2, .h2 {font-size: 3.157em;}
+h2, .h2 {font-size: var(--text-3x);}
 
-h3, .h3 {font-size: 2.369em;}
+h3, .h3 {font-size: var(--text-2x-5);}
 
-h4, .h4 {font-size: 1.777em;}
+h4, .h4 {font-size: var(--text-1x-75);}
 
-h5, .h5 {font-size: 1.333em;}
+h5, .h5 {font-size: var(--text-1x-25);}
 
-small, .text_small {font-size: 0.75em;}
+small {font-size: var(--text-0-75);}
 
-strong {
-  font-weight: 600;
-}
+strong {font-weight: 600;}
 
 blockquote {
-  border-left: 4px solid var(--border-color);
-  padding-left: calc(var(--space) / 2);
-  color: var(--title-color);
+  border-left: 4px solid var(--natural-50);
+  padding-left: var(--spacing-1x);
 }
 
 em {
@@ -64,3 +57,21 @@ ol {
     margin-bottom: .6em;
   }
 }
+
+
+
+
+@media (min-width: 320px) {}
+@media (min-width: 481px) {}
+@media (min-width: 768px) {}
+@media (min-width: 1025px) {}
+@media (min-width: 1281px) {}
+@media (min-width: 1366px) {}
+@media (min-width: 1440px) {}
+@media (min-width: 1536px) {}
+
+
+
+
+
+

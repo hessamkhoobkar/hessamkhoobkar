@@ -29,3 +29,12 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+  .main {
+    margin-bottom: 10rem;
+  }
+  .main.post-list {
+    margin-top: 6rem;
+  }
+</style>
