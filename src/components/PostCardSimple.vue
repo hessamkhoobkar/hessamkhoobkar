@@ -34,7 +34,6 @@ export default {
     transition: all .1s ease;
 
     &__title {
-      margin-top: 0;
       display: inline;
     }
 
