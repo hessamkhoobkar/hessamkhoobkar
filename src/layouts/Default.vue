@@ -4,16 +4,13 @@
     <Header />
 
     <transition name="fade" appear>
-      <main class="main">
+      <main class="container default">
         <slot/>
       </main>
     </transition>
 
     <transition name="fade" appear>
-    <footer class="footer">
-      <span class="footer__copyright">Copyright © {{ new Date().getFullYear() }}. </span>
-      <span class="footer__links">Powered by <a href="//gridsome.org"> Gridsome </a></span>
-    </footer>
+      <Footer />
     </transition>
 
   </div>
@@ -21,20 +18,27 @@
 
 <script>
 import Header from '~/components/Header.vue'
+import Footer from '~/components/Footer.vue'
 
 export default {
 
   components: {
-    Header
+    Header,
+    Footer
   }
 }
 </script>
 
 <style lang="scss">
-  .main {
-    margin-bottom: 10rem;
+
+  .container.default {
+    background: var(--natural-10);
   }
-  .main.post-list {
-    margin-top: 6rem;
-  }
+
+  // .main {
+  //   margin-bottom: 10rem;
+  // }
+  // .main.post-list {
+  //   margin-top: 6rem;
+  // }
 </style>
