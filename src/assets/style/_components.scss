@@ -161,17 +161,24 @@
 
 
 .post-tags {
-  margin: 1em 0 0;
+  margin: 2rem 0 3rem 0;
+  padding-top: 1rem;
+  border-top: 1px solid #D0D2D8;
 
   &__link {
-  	margin-right: .7em;
-  	font-size: .8em;
-  	color: currentColor;
+    margin-right: .5em;
+  	font-size: 0.86rem;
+  	color: #408E8F;
   	text-decoration: none;
-  	background-color: var(--bg-color);
-  	color: currentColor!important; //Todo: remove important;
   	padding: .5em;
-  	border-radius: var(--radius);
+  	border-radius: 0.3em;
+  }
+  
+  &__link:hover {
+    color: #005C69;
+  }
+  &__link:first-child {
+    padding-left: 0;
   }
 }
 

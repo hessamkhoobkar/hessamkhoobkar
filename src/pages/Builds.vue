@@ -2,7 +2,7 @@
   <Layout>
     <div class="page-title">
       <h1 class="page-title__title">Builds &amp; experiments</h1>
-      <p class="page-title__description">My HTML, CSS, JS experiments and builds</p>
+      <p class="page-title__description">My experiments and builds</p>
     </div>
     <!-- List posts -->
     <div class="BuildsList">
