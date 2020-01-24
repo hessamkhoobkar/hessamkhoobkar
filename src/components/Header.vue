@@ -26,7 +26,7 @@
             <a id="dribbble" class="header__socialLink" href="https://dribbble.com/hessam_khoobkar" aria-label="dribbble" target="_blank" rel="noopener">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="19" height="19" viewBox="0 0 32 32" style=" fill:inherit;"><path d="M 16 4 C 9.382813 4 4 9.382813 4 16 C 4 22.617188 9.382813 28 16 28 C 22.617188 28 28 22.617188 28 16 C 28 9.382813 22.617188 4 16 4 Z M 16 6 C 18.535156 6 20.832031 6.953125 22.59375 8.5 C 22.40625 8.761719 22.152344 9.078125 21.75 9.46875 C 20.894531 10.296875 19.527344 11.292969 17.4375 12.0625 C 16.023438 9.449219 14.636719 7.484375 13.71875 6.25 C 14.449219 6.082031 15.214844 6 16 6 Z M 11.75 6.9375 C 12.570313 8.011719 14.03125 10.003906 15.5 12.65625 C 11.433594 13.734375 7.703125 13.871094 6.21875 13.875 C 6.882813 10.785156 8.960938 8.242188 11.75 6.9375 Z M 23.96875 9.96875 C 25.1875 11.582031 25.945313 13.578125 26 15.75 C 25.109375 15.550781 23.796875 15.355469 22.09375 15.34375 C 21.207031 15.339844 20.203125 15.402344 19.125 15.53125 C 18.875 14.960938 18.605469 14.410156 18.34375 13.875 C 20.585938 13.015625 22.113281 11.882813 23.125 10.90625 C 23.46875 10.570313 23.738281 10.261719 23.96875 9.96875 Z M 16.40625 14.46875 C 16.636719 14.933594 16.871094 15.410156 17.09375 15.90625 C 12.820313 17.089844 9.75 20.714844 8.4375 22.53125 C 6.925781 20.78125 6 18.5 6 16 C 6 15.957031 6 15.917969 6 15.875 C 7.351563 15.890625 11.648438 15.796875 16.40625 14.46875 Z M 22.09375 17.3125 C 23.878906 17.3125 25.113281 17.5625 25.84375 17.75 C 25.378906 20.414063 23.875 22.699219 21.75 24.1875 C 21.351563 21.796875 20.695313 19.523438 19.90625 17.4375 C 20.695313 17.359375 21.441406 17.3125 22.09375 17.3125 Z M 17.875 17.78125 C 18.773438 20.0625 19.527344 22.566406 19.90625 25.21875 C 18.710938 25.722656 17.382813 26 16 26 C 13.707031 26 11.589844 25.230469 9.90625 23.9375 C 10.933594 22.53125 13.953125 18.789063 17.875 17.78125 Z"></path></svg>
             </a>
-            <a id="emailLink" @click="mailto" @mouseleave="cleanMailToast" class="header__socialLink" tooltip="Click to copy email address" href="#">
+            <a id="header-email-link" @click="mailto" @mouseleave="cleanMailToast" class="header__socialLink" tooltip="Click to copy email address" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="19" height="19" viewBox="0 0 32 32" style=" fill:inherit;"><path d="M 6 7.03125 C 5.691406 7.03125 5.402344 7.089844 5.125 7.175781 L 8.039063 9.03125 L 23.960938 9.03125 L 26.875 7.175781 C 26.597656 7.089844 26.308594 7.03125 26 7.03125 Z M 4.113281 7.71875 C 3.4375 8.269531 3 9.097656 3 10.03125 L 3 23.03125 C 3 24.683594 4.347656 26.03125 6 26.03125 L 26 26.03125 C 27.652344 26.03125 29 24.683594 29 23.03125 L 29 10.03125 C 29 9.097656 28.5625 8.269531 27.886719 7.71875 L 16 15.28125 Z M 6 12.445313 L 16 18.8125 L 26 12.445313 L 26 24.03125 L 6 24.03125 Z"></path></svg>
             </a>
         </div>
@@ -38,7 +38,7 @@ export default {
     name: 'Header',
     methods: {
         mailto () {
-            document.getElementById("emailLink").setAttribute("tooltip", "Email address copied to clipboard");
+            document.getElementById("header-email-link").setAttribute("tooltip", "Email address copied to clipboard");
 
             let dummy = document.createElement("textarea");
 
@@ -49,7 +49,7 @@ export default {
             document.body.removeChild(dummy);
         },
         cleanMailToast () {
-            document.getElementById("emailLink").setAttribute("tooltip", "Click to copy email address");
+            document.getElementById("header-email-link").setAttribute("tooltip", "Click to copy email address");
         }
     }
 }
@@ -90,7 +90,9 @@ export default {
 
     &__socialLink {
         color: var(--natural-50);
+        fill: var(--natural-50);
         padding: var(--spacing-0-5) var(--spacing-0-75);
+        transition: all .2s ease;
         
         &:hover {
             color:  var(--primary);

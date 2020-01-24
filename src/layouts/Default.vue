@@ -33,10 +33,10 @@ export default {
 
   .container.default {
     background: var(--natural-10);
+    margin-bottom: var(--layout-10x);
   }
 
   // .main {
-  //   margin-bottom: 10rem;
   // }
   // .main.post-list {
   //   margin-top: 6rem;
