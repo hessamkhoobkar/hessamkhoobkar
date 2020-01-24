@@ -35,10 +35,4 @@ export default {
     background: var(--natural-10);
     margin-bottom: var(--layout-10x);
   }
-
-  // .main {
-  // }
-  // .main.post-list {
-  //   margin-top: 6rem;
-  // }
 </style>

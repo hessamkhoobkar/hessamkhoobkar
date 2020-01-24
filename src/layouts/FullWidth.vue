@@ -4,7 +4,7 @@
     <Header />
 
     <transition name="fade" appear>
-      <main class="container archive-list">
+      <main>
         <slot/>
       </main>
     </transition>
@@ -31,9 +31,4 @@ export default {
 
 <style lang="scss">
 
-  .container.archive-list {
-    background: var(--natural-10);
-    margin-bottom: var(--layout-6x);
-    margin-bottom: var(--layout-10x);
-  }
 </style>
