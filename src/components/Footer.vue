@@ -111,7 +111,10 @@ export default {
         &__image-wrap {
             width: 50%;
             display: flex;
-            // justify-content: end;
+
+            img {
+                align-self: center;   
+            }
         }
         &__socialLinks {
             // border-top: 2px solid var(--primary);
