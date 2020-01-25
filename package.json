@@ -8,10 +8,12 @@
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",
+    "@gridsome/plugin-sitemap": "^0.2.3",
     "@gridsome/remark-prismjs": "^0.2.0",
     "@gridsome/source-filesystem": "^0.6.0",
     "@gridsome/transformer-remark": "^0.3.0",
     "gridsome": "^0.7.0",
+    "gridsome-plugin-feed": "^1.0.2",
     "typeface-bitter": "0.0.71",
     "typeface-roboto": "0.0.75",
     "typeface-roboto-mono": "0.0.75"
