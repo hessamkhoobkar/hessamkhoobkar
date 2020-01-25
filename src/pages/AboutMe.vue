@@ -50,6 +50,16 @@
   </Layout>
 </template>
 
+<script>
+export default {
+  mounted () {
+    import('medium-zoom').then(mediumZoom => {
+      this.zoom = mediumZoom.default('.content-box img')
+    })
+  },
+}
+</script>
+
 <style lang="scss" scoped>
   .my-hero {
     display: flex;
@@ -87,6 +97,4 @@
       margin-bottom: var(--spacing-0-75);
     }
   }
-
 </style>
-

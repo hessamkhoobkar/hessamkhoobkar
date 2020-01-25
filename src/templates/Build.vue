@@ -43,7 +43,12 @@ export default {
         }
       ]
     }
-  }
+  },
+  mounted () {
+    import('medium-zoom').then(mediumZoom => {
+      this.zoom = mediumZoom.default('.post img')
+    })
+  },
 }
 </script>
 
