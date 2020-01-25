@@ -6,6 +6,7 @@
 
 module.exports = {
   siteName: 'hessam khoobkar',
+  siteUrl: 'https://www.hessamkhoobkar.ir/',
   siteDescription: 'My online portfolio and journal',
 
   templates: {
