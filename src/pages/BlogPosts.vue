@@ -4,8 +4,8 @@
       <h1 class="page-title__title">Blog Posts</h1>
       <p class="page-title__description">My experiences, opinions, and journal</p>
     </div>
-    <!-- List posts -->
-    <div class="postsList">
+
+    <div class="posts-list">
       <PostCardSimple v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
     </div>
 
@@ -52,7 +52,7 @@ export default {
 
 <style lang="scss">
 
-.postsList {
+.posts-list {
 	padding-top: var(--spacing-3x);
 }
 
