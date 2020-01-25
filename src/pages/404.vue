@@ -27,8 +27,9 @@
                 margin-bottom: var(--spacing-0-5);        
             }
             &__lead{
+                // font-family: var(--font-secondary);
                 color: var(--natural-50);
-                font-size: var(--text-2x);       
+                font-size: var(--text-0-75);       
                 margin-top: 0;        
                 margin-bottom: var(--spacing-1x);        
             }
