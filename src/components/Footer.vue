@@ -117,7 +117,6 @@ export default {
             }
         }
         &__socialLinks {
-            // border-top: 2px solid var(--primary);
             background-image: linear-gradient(var(--primary-light) 2px, transparent calc(0% + 2px));
             background-size: 34% 100%;
             background-repeat: no-repeat;
@@ -126,5 +125,13 @@ export default {
             margin-top: var(--spacing-2x-5);
             margin-left: - 0.75rem;
         }
+
+        a:not(.button), a:not(.navItem) {
+		color: var(--primary-light);
+		 transition: all .2s;
+		&:hover {
+			color: var(--primary-lighter);
+		}
+	}	
     }
 </style>

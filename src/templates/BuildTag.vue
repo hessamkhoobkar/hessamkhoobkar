@@ -1,12 +1,13 @@
 <template>
   <Layout>
-    <h1 class="tag-title text-center space-bottom">
-      # {{ $page.buildTag.title }}
-    </h1>
-
-    <div class="posts">
-      <PostCard v-for="edge in $page.buildTag.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
+    <div class="page-title content-box">
+      <h1 class="page-title__title"># {{ $page.buildTag.title }}</h1>
     </div>
+
+    <div class="postsList">
+      <PostCardSimple v-for="edge in $page.buildTag.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
+    </div>
+
   </Layout>
 </template>
 
@@ -33,18 +34,38 @@ query BuildTag ($id: ID!) {
 </page-query>
 
 <script>
-import PostCard from '~/components/PostCard.vue'
+import PostCardSimple from '~/components/PostCardSimple.vue'
+import Layout from '~/layouts/ArchiveList.vue'
 
 export default {
   components: {
-    PostCard
+    Layout,
+    PostCardSimple
   },
-  metaInfo: {
-    title: 'Hello, world!'
+  metaInfo () {
+    return {
+      title: this.$page.buildTag.title,
+    }
   }
 }
 </script>
 
 <style lang="scss">
 
+.postsList {
+	padding-top: var(--spacing-3x);
+}
+
+.page-title {
+	margin-top: -5em;
+
+	&__title {
+		color: var(--primary);
+		font-size: var(--text-5x-5);
+	}
+	&__description {
+		color: var(--primary-light);
+	}
+}
 </style>
+

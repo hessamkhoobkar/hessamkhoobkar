@@ -6,11 +6,11 @@
         </div>
 
         <nav id="main-navigation">
-            <g-link class="header__navItem" to="/" exact>Index</g-link>
-            <g-link class="header__navItem" to="/Work/">Work</g-link>
-            <g-link class="header__navItem" to="/Builds/">Builds</g-link>
-            <g-link class="header__navItem" to="/Blog-Posts/">Blog</g-link>
-            <g-link class="header__navItem" to="/About-Me/">about me</g-link>
+            <g-link class="header__navItem navItem" to="/" exact>Index</g-link>
+            <g-link class="header__navItem navItem" to="/Work/">Work</g-link>
+            <g-link class="header__navItem navItem" to="/Builds/">Builds</g-link>
+            <g-link class="header__navItem navItem" to="/Blog-Posts/">Blog</g-link>
+            <g-link class="header__navItem navItem" to="/About-Me/">about me</g-link>
         </nav>
         
         <div id="header_socialLinks" class="socialLinks">
@@ -75,6 +75,7 @@ export default {
         font-size: var(--text-0-75);
         color: var(--natural-50);
         padding: var(--spacing-0-5) var(--spacing-0-75);
+        color: var(--natural-50);
 
         &:first-child {
             padding-inline-start: 0;
@@ -120,4 +121,5 @@ export default {
     position: absolute;
     white-space: nowrap;
 } 
+
 </style>

@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="page-title">
+    <div class="page-title content-box">
       <h1 class="page-title__title">Blog Posts</h1>
       <p class="page-title__description">My experiences, opinions, and journal</p>
     </div>
@@ -45,32 +45,26 @@ export default {
     PostCardSimple
   },
   metaInfo: {
-    title: 'hessam khoobkar Blog'
+    title: 'Blog'
   }
 }
 </script>
 
 <style lang="scss">
 
-  .postsList {
-    padding-top: 3em;
-  }
+.postsList {
+	padding-top: var(--spacing-3x);
+}
 
-  .page-title {
-    // padding-top: 2em;
-    width: 40rem;
-    margin: 0 auto;
-    margin-top: -5em;
-  }
-  
-  .page-title {
+.page-title {
+	margin-top: -5em;
 
-    &__title {
-      color: #005C69;
-      font-size: 5.610rem;
-    }
-    &__description {
-      color: #408E8F;
-    }
-  }
+	&__title {
+		color: var(--primary);
+		font-size: var(--text-5x-5);
+	}
+	&__description {
+		color: var(--primary-light);
+	}
+}
 </style>

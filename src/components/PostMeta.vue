@@ -15,11 +15,11 @@ export default {
 
 <style lang="scss">
   .post-meta {
-    font-size: .75em;
-    color: #6E7884;
+    font-size: var(--text-0-75);
+    color: var(--natural-50);
 
     & strong {
-      color: #071232;
+      color: var(--natural-90);
     }
   }
 </style>
