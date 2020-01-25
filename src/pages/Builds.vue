@@ -1,11 +1,11 @@
 <template>
   <Layout>
-    <div class="page-title">
+    <div class="page-title content-box">
       <h1 class="page-title__title">Builds &amp; experiments</h1>
       <p class="page-title__description">My experiments and builds</p>
     </div>
-    <!-- List posts -->
-    <div class="BuildsList">
+
+    <div class="builds-list">
       <PostCardBuild v-for="edge in $page.builds.edges" :key="edge.node.id" :build="edge.node"/>
     </div>
 
@@ -52,33 +52,32 @@ export default {
 
 <style lang="scss">
 
-  .BuildsList {
-    padding-top: 3em;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.builds-list {
+	padding-top: 3em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
 
-    .post-card-build {
-      width: 49%;
-    }
-  }
+	.post-card-build {
+		width: 49%;
+	}
+}
 
-  .page-title {
-    // padding-top: 2em;
-    width: 40rem;
-    margin: 0 auto;
-    margin-top: -5em;
-  }
-  
-  .page-title {
 
-    &__title {
-      color: #005C69;
-      font-size: 5.610rem;
-    }
-    &__description {
-      color: #408E8F;
-    }
-  }
+.postsList {
+	padding-top: var(--spacing-3x);
+}
+
+.page-title {
+	margin-top: -5em;
+
+	&__title {
+		color: var(--primary);
+		font-size: var(--text-5x-5);
+	}
+	&__description {
+		color: var(--primary-light);
+	}
+}
 </style>
