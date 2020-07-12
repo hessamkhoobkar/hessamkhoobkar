@@ -23,6 +23,7 @@ collections:
     folder: "content/posts"
     create: true
     slug: "{{slug}}"
+    preview_path: "blog/{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Excerpt", name: "excerpt", widget: "string" }
