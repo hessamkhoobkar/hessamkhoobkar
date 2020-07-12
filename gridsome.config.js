@@ -21,8 +21,8 @@ function addStyleResources(rule) {
 
 module.exports = {
   siteName: "khoobkar",
-  siteUrl: "Your URL",
-  siteDescription: "Base meta description",
+  siteUrl: "https://www.hessamkhoobkar.ir/",
+  siteDescription: "hessam khoobkar's online portfolio, store, & blog",
   // For using global styles, for more info:
   // https://gridsome.org/docs/assets-css/#global-preprocessor-files-ie-variables-mixins
   chainWebpack(config) {

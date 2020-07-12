@@ -12,7 +12,7 @@
 
 backend:
   name: github
-  repo: your_name/your_repo # Branch to update (optional; defaults to master)
+  repo: hessamkhoobkar/hessamkhoobkar # Branch to update (optional; defaults to master)
 
 media_folder: "static/uploads" # Where your uploads go.
 public_folder: "/uploads" # public files go here
