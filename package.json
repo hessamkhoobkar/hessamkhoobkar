@@ -2,6 +2,7 @@
   "name": "hessamkhoobkar",
   "private": true,
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
@@ -16,12 +17,17 @@
     "gridsome-plugin-remark-shiki": "^0.3.1",
     "gridsome-plugin-rss": "^1.2.0",
     "medium-zoom": "^1.0.5",
+    "npm-force-resolutions": "0.0.3",
     "vue-parallaxy": "^1.1.1"
   },
   "devDependencies": {
+    "minimist": "^1.2.5",
     "moment": "^2.26.0",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.2.1",
     "tailwindcss": "^1.4.6"
+  },
+  "resolutions": {
+    "minimist": "^1.2.5"
   }
 }
