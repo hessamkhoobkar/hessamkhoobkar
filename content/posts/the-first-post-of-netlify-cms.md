@@ -5,6 +5,7 @@ excerpt: Understanding this reality requires a reminder of how we arrived at
   people of Egypt.
 date: 2020-07-12T06:24:29.531Z
 ---
+
 Yet what we also understand is that our values should express themselves not just through our churches or synagogues, temples or mosques; they should express themselves through our government. Now, some of you may have heard me talk about the Joshua generation. Don't tell me that Democrats won't keep us safe. Passions fly on immigration, but I don't know anyone who benefits when a mother is separated from her infant child or an employer undercuts American wages by hiring illegal workers. So whatever we think of the past, we must not be prisoners of it.
 
 ![kayer post](/uploads/postcover-v3.jpg "sadsa")
@@ -15,7 +16,7 @@ And so they need an assurance that somebody out there cares about them, is liste
 
 I believe we can provide jobs to the jobless, homes to the homeless, and reclaim young people in cities across America from violence and despair. I'll recruit an army of new teachers, and pay them higher salaries and give them more support.
 
-```
+```yml
 collections:
   - name: "posts"
     label: "Posts"

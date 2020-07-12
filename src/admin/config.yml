@@ -13,6 +13,7 @@
 backend:
   name: github
   repo: hessamkhoobkar/hessamkhoobkar # Branch to update (optional; defaults to master)
+  use_graphql: true
 
 media_folder: "static/uploads" # Where your uploads go.
 public_folder: "/uploads" # public files go here
