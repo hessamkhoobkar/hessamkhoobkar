@@ -18,9 +18,13 @@ media_folder: "static/uploads" # Where your uploads go.
 public_folder: "/uploads" # public files go here
 
 collections:
-  - name: "Posts"
-    label: "posts"
+  - name: "posts"
+    label: "Posts"
     folder: "content/posts"
-    slug: "{{title}}"
+    create: true
+    slug: "{{slug}}"
     fields:
-      - { label: "title", name: "title", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Excerpt", name: "excerpt", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "date" }
+      - { label: "Body", name: "body", widget: "markdown" }
