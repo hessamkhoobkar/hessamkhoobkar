@@ -38,11 +38,11 @@ slug: post-title-custom-url # optional, override the auto-generated post slug
 description: "Lorem ipsum description sit amet" # required, used in meta tags and RSS feed
 date: 2019-03-01 17:54:43 # required; time is optional, but recommended for the <time> tag and better post sorting control
 author: bleda # optional
-tags: ['markdown', 'design'] # optional
+tags: ["markdown", "design"] # optional
 cover: https://example.com/path/to/cover/image.jpg # optional parallax post cover image
-fullscreen: false # optional - when `true`, makes parallax cover image take up full viewport height
 excerpt: "Custom excerpt to show in archive pages" # optional
 ---
+
 ```
 
 ## Markdown syntax & styling
@@ -71,17 +71,17 @@ Normal paragraphs should not be indented with spaces or tabs.
 
 Make text:
 
-- **bold**: `**bold text**`
-- _italic_: `_italic text_`
-- ~~strikethrough~~: `~~strikethrough text~~`
-- <mark>highlighted</mark>: `<mark>highlighted text</mark>`
-- [link](https://example.com): `[link text](https://example.com)`
+-   **bold**: `**bold text**`
+-   _italic_: `_italic text_`
+-   ~~strikethrough~~: `~~strikethrough text~~`
+-   <mark>highlighted</mark>: `<mark>highlighted text</mark>`
+-   [link](https://example.com): `[link text](https://example.com)`
 
 For links, you can also use the [reference-style](https://daringfireball.net/projects/markdown/syntax#link):
 
 ```markdown
 [link text][id] reference-style link.
-[id]: https://example.com/  "Optional Title Here"
+[id]: https://example.com/ "Optional Title Here"
 ```
 
 #### Lists
@@ -89,9 +89,9 @@ For links, you can also use the [reference-style](https://daringfireball.net/pro
 Unordered:
 
 ```markdown
-- one
-- two
-- three
+-   one
+-   two
+-   three
 ```
 
 Ordered:
@@ -125,17 +125,17 @@ With Markdown, do: `[![Image alt text](https://example.com/path/to/image.jpg)](u
 Any of the following:
 
 ```markdown
-* * *
-
-***
-
-*****
-
-- - -
+---
 
 ---
 
----------------------------------------
+---
+
+---
+
+---
+
+---
 ```
 
 ... will create a `<hr>` like this one:
@@ -152,24 +152,24 @@ To write inline code `like this` simply surround it with backticks: \`some inlin
 
 Surround your code with triple backticks, like this:
 
-```markdown
+````markdown
     ```language
     your code here
     ```
-```
+````
 
 Specify the language ([reference](https://github.com/octref/shiki/blob/master/packages/languages/src/lang.ts)) in order to get proper syntax highlighting:
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
-    <p>Lorem ipsum</p>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+    </head>
+    <body>
+        <p>Lorem ipsum</p>
+    </body>
 </html>
 ```
 

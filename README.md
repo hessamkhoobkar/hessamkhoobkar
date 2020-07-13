@@ -6,11 +6,11 @@
 
 ## Demo
 
-- [Page](https://gridsome-starter-bleda.netlify.com/about/)
-- [Single post](https://gridsome-starter-bleda.netlify.com/getting-started-with-gridsome-and-bleda/)
-- [Blog archive](https://gridsome-starter-bleda.netlify.com/)
-- [Tags archive](https://gridsome-starter-bleda.netlify.com/tag/getting-started/)
-- [Author archive](https://gridsome-starter-bleda.netlify.com/author/gridsome/)
+-   [Page](https://gridsome-starter-bleda.netlify.com/about/)
+-   [Single post](https://gridsome-starter-bleda.netlify.com/getting-started-with-gridsome-and-bleda/)
+-   [Blog archive](https://gridsome-starter-bleda.netlify.com/)
+-   [Tags archive](https://gridsome-starter-bleda.netlify.com/tag/getting-started/)
+-   [Author archive](https://gridsome-starter-bleda.netlify.com/author/gridsome/)
 
 ## Preview
 
@@ -18,21 +18,20 @@
 
 ## Features
 
-- Sitemap
-- RSS Feed
-- Google Analytics
-- Custom 404 Page
-- Open Graph meta tags
-- Code syntax highlighting
-- Parallax post image covers
-- Option for fullscreen covers
-- Medium-like image lightbox
-- Taxonomies: Tags and Authors
-- Aproximate read time for posts
-- Post excerpts: automatic or user-defined
-- **Paginated** [blog](https://gridsome-starter-bleda.netlify.com/2/), [tag](https://gridsome-starter-bleda.netlify.com/tag/dummy/), and [author](https://gridsome-starter-bleda.netlify.com/author/gridsome/) archives
-- Easily show post dates in your locale (moment.js)
-- Posts show a warning if they're older than 1 year (configurable)
+-   Sitemap
+-   RSS Feed
+-   Google Analytics
+-   Custom 404 Page
+-   Open Graph meta tags
+-   Code syntax highlighting
+-   Parallax post image covers
+-   Medium-like image lightbox
+-   Taxonomies: Tags and Authors
+-   Aproximate read time for posts
+-   Post excerpts: automatic or user-defined
+-   **Paginated** [blog](https://gridsome-starter-bleda.netlify.com/2/), [tag](https://gridsome-starter-bleda.netlify.com/tag/dummy/), and [author](https://gridsome-starter-bleda.netlify.com/author/gridsome/) archives
+-   Easily show post dates in your locale (moment.js)
+-   Posts show a warning if they're older than 1 year (configurable)
 
 ## Installation
 
