@@ -1,8 +1,8 @@
 module.exports = {
   siteName: 'hessam khoobkar',
-  siteDescription: "hessam khoobkar's online portfolio, store, & blog",
+  siteDescription: "hessam khoobkar's portfolio, store, & blog",
   siteUrl: 'https://www.hessamkhoobkar.ir/',
-  titleTemplate: `%s | hessam khoobkar's online portfolio`,
+  titleTemplate: `%s | hessam khoobkar's portfolio`,
   icon: 'src/favicon.png',
 
   transformers: {
@@ -96,7 +96,8 @@ module.exports = {
   ],
 
   templates: {
-    Post: '/:title',
+    Post: '/blog/:title',
+    Build: '/builds/:title',
     Tag: '/tag/:id',
     Author: '/author/:id',
   },
