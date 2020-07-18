@@ -20,31 +20,31 @@ module.exports = {
       transparent: "transparent",
       current: "currentColor",
 
-      black: "#22292f",
+      black: "#161123",
       white: "#fff",
 
       gray: {
-        100: "#f7fafc",
-        200: "#edf2f7",
-        300: "#e2e8f0",
-        400: "#cbd5e0",
-        500: "#a0aec0",
-        600: "#718096",
-        700: "#4a5568",
-        800: "#2d3748",
-        900: "#1a202c",
+        100: "#e9e8eb",
+        200: "#d3d2d8",
+        300: "#bdbbc4",
+        400: "#a7a4b1",
+        500: "#7c7789",
+        600: "#504962",
+        700: "#3a334f",
+        800: "#241c3b",
+        900: "#1d162f",
         codeblock: "#fbfcfd"
       },
       red: {
-        100: "#fff5f5",
-        200: "#fed7d7",
-        300: "#feb2b2",
-        400: "#fc8181",
-        500: "#f56565",
-        600: "#e53e3e",
-        700: "#c53030",
-        800: "#9b2c2c",
-        900: "#742a2a"
+        100: "#FEE6F0",
+        200: "#FDC1D8",
+        300: "#FC9BC1",
+        400: "#F95093",
+        500: "#F70564",
+        600: "#DE055A",
+        700: "#94033C",
+        800: "#6F022D",
+        900: "#4A021E"
       },
       orange: {
         100: "#fffaf0",
@@ -239,7 +239,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        "Fira Sans",
+        "Inter",
         "-apple-system",
         "BlinkMacSystemFont",
         '"Segoe UI"',

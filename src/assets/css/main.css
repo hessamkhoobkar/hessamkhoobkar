@@ -1,11 +1,50 @@
 /*! purgecss start ignore */
-@import 'tailwindcss/base';
+@import "tailwindcss/base";
 /*! purgecss end ignore */
 
-@import 'components/resets';
+@import "components/resets";
 
-@import 'tailwindcss/components';
+@import "tailwindcss/components";
 
-@import 'components/markdown';
+@import "components/markdown";
 
-@import 'tailwindcss/utilities';
+@import "tailwindcss/utilities";
+
+/* Page transitions animation */
+
+.fade-enter-active {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  opacity: 1;
+  -webkit-animation: slideUp 0.9s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  animation: slideUp 0.9s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  -webkit-transform: translate3d(0, 4vh, 0);
+  transform: translate3d(0, 4vh, 0);
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform: translate3d(0, 4vh, 0);
+    transform: translate3d(0, 4vh, 0);
+  }
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    -webkit-transform: translate3d(0, 4vh, 0);
+    transform: translate3d(0, 4vh, 0);
+  }
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: translateY(30px);
+}
